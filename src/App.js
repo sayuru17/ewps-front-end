@@ -20,8 +20,8 @@ function App() {
 
         {/*<Navbar/>*/}
         <Switch>
-            <Route path='/' exact component={Form} />
-          <Route path='/home'  component={Home} />
+           // <Route path='/' exact component={Form} />
+          <Route path='/home' exact component={Home} />
           <Route path='/user' component={User} />
           <Route path='/reports' component={Reports} />
           <Route path='/products' component={Products} />
