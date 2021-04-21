@@ -1,115 +1,81 @@
-import React,{useState} from 'react';
+import React from 'react';
 import './Team.css';
+import Navbar from "../../Side bar/Navbar";
 
 
 function Team(){
-
-const [pname] = useState('M.B.M. Hikam');
-const [job] = useState('Undergraduate at University of Westminster');
-const [about] = useState('Someone who enjoys finding solutions to difficult problems.');
-const [p1name] = useState('Dumindu Hewarachchi');
-const [job1] = useState('Undergraduate at University of Westminster');
-const [about1] = useState('Someone who enjoys finding solutions to difficult problems.');
-const [pname2] = useState('Sayuru Gunathilaka');
-const [job2] = useState('Undergraduate at University of Westminster');
-const [about2] = useState('Someone who enjoys finding solutions to difficult problems.');
-const [pname3] = useState('Thamadie Gunawardana');
-const [job3] = useState('Undergraduate at University of Westminster');
-const [about3] = useState('Someone who enjoys finding solutions to difficult problems.');
-const [pname4] = useState('Jayami Rasara');
-const [job4] = useState('Undergraduate at University of Westminster');
-const [about4] = useState('Someone who enjoys finding solutions to difficult problems.');
-const [pname5] = useState('Tharusha Peiris');
-const [job5] = useState('Undergraduate at University of Westminster');
-const [about5] = useState('Someone who enjoys finding solutions to difficult problems.');
-
-
 return(
-    <div className='Team'>
-        <h1>Team</h1>
+    <div>
+      <Navbar/>
 
-        <div className="A-team-container">
+    <div className='Team'>
+        <body>
+        <div className="wrapper">
             
-            <div className="content">
-                <div className="upper-container">
-                    <div className="image-container">
-                    <img src="user/b3.jpg" alt="Team Leader" height="100px" width="100px"/>
+            <h1>- Our Tech Team -</h1>
+
+            <div className="team1">
+                <div className="team-member">
+                    <div className="team-img">
+                        <img src="/user/hikam.jpg" alt="team_member_image" />
                     </div>
+                    <h3>M.B.M.Hikam</h3>
+                    <p className="role">Data science Developer </p>
+                    <p>  Have a wide range of technical competencies including: statistics and machine learning, coding languages, databases, machine learning, and reporting technologies.
+                        </p>
                 </div>
-            <div className="lower-container">
-                <h3>{ pname }</h3><br/>
-                <h4>{job}</h4>
-                <p>{ about }</p>
-                <button><a href="https://www.linkedin.com/in/mohamed-hikam-b94531198/">Visit Profile </a></button>
-            </div>
-            </div>
-            <div className="content">
-                <div className="upper-container">
-                    <div className="image-container">
-                    <img src="user/b3.jpg" alt="Team Leader" height="100px" width="100px"/>
+                <div className="team-member">
+                <div className="team-img">
+                        <img src="/user/dumindu.jpg" alt="team_member_image" />
                     </div>
+                <h3>Dumindu Hewarachchi</h3>
+                    <p className="role">Backend Developer </p>
+                    <p>Someone who builds and maintains the technology needed to power the components which enable the user-facing side of the website to exist.</p>
                 </div>
-            <div className="lower-container">
-                <h3>{ p1name }</h3><br/>
-                <h4>{job1}</h4>
-                <p>{ about1 }</p>
-                <button>Visit Profile</button>
-            </div>
-            </div>
-            <div className="content">
-                <div className="upper-container">
-                    <div className="image-container">
-                    <img src="user/b3.jpg" alt="Team Leader" height="100px" width="100px"/>
+                <div className="team-member">
+                <div className="team-img">
+                        <img src="/user/sayuru.jpg" alt="team_member_image" />
                     </div>
+                <h3>Sayuru Gunathilaka</h3>
+                    <p className="role">Frontend Developer </p>
+                    <p>Providing high impact web solutions for diverse industry organizations. 
+                        Skilled in designing, developing web-based applications incoperating a range of technologies. </p>
                 </div>
-            <div className="lower-container">
-                <h3>{ pname2 }</h3><br/>
-                <h4>{job2}</h4>
-                <p>{ about2 }</p>
-                <button><a href="https://www.linkedin.com/in/sayuru-gunathilaka-6225131a6/">Visit Profile </a></button>
-            </div>
-            </div>
-            <div className="content">
-                <div className="upper-container">
-                    <div className="image-container">
-                    <img src="user/g3.jpg" alt="Team Leader" height="100px" width="100px"/>
+                </div>
+               
+                <div className="team2">
+                <div className="team-member">
+                <div className="team-img">
+                        <img src="/user/jayami.jpg" alt="team_member_image" />
                     </div>
+                    <h3>Jayami Rasara</h3>
+                    <p className="role">Data science Developer </p>
+                    <p>Utilize analytical, statistical, and programming skills to collect, analyze, and interpret large data sets.
+                    Proficient in statistical models with R and Python.</p>
                 </div>
-            <div className="lower-container">
-                <h3>{ pname3 }</h3><br/>
-                <h4>{job3}</h4>
-                <p>{ about3 }</p>
-                <button><a href="https://www.linkedin.com/in/thamadiedulsandi/">Visit Profile </a></button>
-            </div>
-            </div>
-            <div className="content">
-                <div className="upper-container">
-                    <div className="image-container">
-                    <img src="user/g3.jpg" alt="Team Leader" height="100px" width="100px"/>
+                <div className="team-member">
+                <div className="team-img">
+                        <img src="/user/thamadie6.png" alt="team_member_image" />
                     </div>
+                <h3>Thamadie Gunawardane</h3>
+                    <p className="role">Backend Developer </p>
+                    <p>Responsible for preparing all the information that needs to be sent over to be used on the client-facing side of the web browser.</p>
                 </div>
-            <div className="lower-container">
-                <h3>{ pname4 }</h3><br/>
-                <h4>{job4}</h4>
-                <p>{ about4 }</p>
-                <button>Visit Profile</button>
-            </div>
-            </div>
-            <div className="content">
-                <div className="upper-container">
-                    <div className="image-container">
-                    <img src="user/g3.jpg" alt="Team Leader" height="100px" width="100px"/>
+                <div className="team-member">
+                <div className="team-img">
+                        <img src="/user/tharusha.jpg" alt="team_member_image" />
                     </div>
+                <h3>Tharusha Peiris</h3>
+                    <p className="role">Frontend Developer </p>
+                    <p>Innovative Frontend Developer that maintains responsive websites in the recruiting industry.
+                        Proficient in HTML, CSS, Javascript and modern frameworks.
+                    </p>
                 </div>
-            <div className="lower-container">
-                <h3>{ pname5 }</h3><br/>
-                <h4>{job5}</h4>
-                <p>{ about5 }</p>
-                <button><a href="https://www.linkedin.com/in/tharusha-peiris-a07906195/">Visit Profile</a></button>
-            </div>
-            </div>
+                
+            </div>        
         </div>
-        
+        </body>
+        </div>
     </div>
 );
 }

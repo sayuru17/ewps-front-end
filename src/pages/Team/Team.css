@@ -1,125 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
-
-* {
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Milonga&family=Miltonian+Tattoo&family=New+Rocker&display=swap');
+.Team {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Lato', sans-serif;
-    
+    margin: 0%;
+    padding: 1%;
   }
 
-.Team h1{
-    margin: 2% 0% 0% 0%;
-    padding: 0% 10% 0% 40%;
-    font-size:5rem;
-    background: lightgrey;
+.Team body{
+  background: linear-gradient(to bottom right, #ffffcc 0%, #333300 100%);
+  }
+ 
 
-  }
-  .Team .A-team-container{
-    margin-left: 15%;
-    padding: 2%;
-    align-items: center;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    border: 5%;
-    width: 65%;
-    text-align: center;
-    height: 5%;
-    justify-content: right;
-    
-  }
-  
-  .Team .content{
-  width: 100%;
-    
-    background:cyan;
-    border-radius: 10px;
-    box-shadow: 0px 1px 10px 1px blue;
-    overflow: hidden;
-  }
-  .Team .A-team-container .content .upper-container{
-    height: 100px;
-    background: linear-gradient(
-      to left,#33ccff 0%, #ff99cc 100%
-    );
-    
-  
-  }
-  
+.Team .wrapper h1{
+  margin-bottom: 2.5%;
+    font-family: 'Allura', cursive;
+  font-size: 52px;
+  text-align: center;
+    font-weight: bolder;
+}
 
-/*.Team .A-team-container .content .image-container img{
-  background: rgb(76,190,235);
-  width: 30%;
+.Team .team1,.team2{
+  display:flex;
+  text-align:center;
+  width: auto;
+  justify-content: center;
+  flex-wrap:wrap;
+}
+
+.Team .team1 .team-member{
+  background:#fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 25px;
+  color: #8e8b8b;
+  /*position: relative;*/
+}
+.Team .team2 .team-member{
+  background:#fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;
+  /*position: relative;*/
+}
+.Team .team1 .team-member h3{
+  color: #7e9ad6;
+  font-size: 23px;
+  font-family: 'Milonga', cursive;
+  margin-top: -15%;
+}
+.Team .team2 .team-member h3{
+  color: #7e9ad6;
+  margin-top: -15%;
+  font-size: 23px;
+  font-family: 'Milonga', cursive;
+}
+.Team .team1 .team-member p{
+  text-align: justify;
+}
+.Team .team2 .team-member p{
+  text-align: justify;
+}
+.Team .team1 .team-member p.role{
+  color:rgb(142, 182, 177);
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 12px 0;
+}
+.Team .team2 .team-member p.role{
+  color:rgb(142, 182, 177);
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 12px 0;
+}
+.Team .team1 .team-member .team-img{
+  width: 100px;
   height: 100px;
   border-radius: 50%;
-  padding: 5px;
-  transform: translate(95px,45px);
-  
-  }*/
-.Team  .A-team-container img{
-  border: 2px solid #8e00b9;
-  background: rgb(76,190,235);
-  width: 30%;
-  
-  height: 10%;
+  position:relative;
+ left: 60%;
+top: -20%;
+
+  /*background: #7bf5f5;*/
+  background: #fff;
+}
+.Team .team2 .team-member .team-img{
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  padding: 5px;
+  /*position: relative;*/
+  position:relative;
+ left: 60%;
+top: -20%;
+  
+  /*background: #7bf5f5;*/
+  background: #fff;
+}
+.Team .team1 .team-member .team-img img{
+  width: 100px;
+  padding: 6px;
+  border-radius: 50%;
+  height: 100px;
+} 
+.Team .team2 .team-member .team-img img{
+  width: 100px;
+  padding: 6px;
+  border-radius: 50%;
+  height: 100px;
+} 
  
-  
-}
-.Team .A-team-container .content .lower-container {
-  margin-top: 20%;
-    height: 50%;
-  background: cyan;
-  text-align: center;
-  font-family: 'Titillium web', sans-serif;
-  
-  }
-  
-
-.Team .A-team-container .lower-container h3,h4,p{
-  margin:0;
-  padding: 0;
-}
-.Team .A-team-container .lower-container h3{
-color: #2f2d2e;
-font-weight: 600;
-font-size: 1.5rem;
-
-}
-.Team .A-team-container .lower-container h4{
-  color: #8d3176;
-  font-weight: 700;
-  font-size: 1rem;
-  
-  }
-  .Team .A-team-container .lower-container p{
-    margin:1rem;
-    text-align: justify;
-    color: #2f2d2e;
-    font-size: 0.9rem;
-    font-weight: 300;
-    }
-
-    .Team .A-team-container button{
-      margin: 1rem;
-      color: #271283;
-      font: bold;
-      background-color: white;
-      border: 2px solid #8e00b9;
-      padding: 0.6rem;
-      margin-top: 0;
-      border-radius: 6px;
-      transition-duration: 0.6s;
-      animation: ease-in-out;
-    }
-
-    .Team .A-team-container    button:hover{
-      background-image: linear-gradient(to left,#33ccff 0%, #ff99cc 100% );
-      transform: scale(1);
-      border: none;
-      color: white;
-
-    
-    }

@@ -30,6 +30,7 @@ function Navbar() {
               </Link>
             </li>
             {SidebarData.map((item, index) => {
+              <img src="../"></img>
               return (
                 <li key={index} className={item.cName}>
                   <Link to={item.path}>

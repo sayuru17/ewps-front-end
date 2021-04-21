@@ -2,8 +2,10 @@ import React from 'react';
 //import {PostMasonry} from '../components/common';
 //import trending from '../assets/mocks/trending';
 import './Home.css';
+import Navbar from "../Side bar/Navbar";
 function Home() {
 return (<body>
+    <Navbar/>
 <header>
     <nav className="homenavbar">
         <div className="homecontainer">

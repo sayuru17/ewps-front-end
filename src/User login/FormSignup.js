@@ -11,7 +11,7 @@ const FormSignup = ({ submitForm }) => {
 
   return (
     <div className='form-content-right'>
-      <form onSubmit={handleSubmit} className='form' noValidate>
+      <form action="" method="post" onSubmit={handleSubmit} className='form' noValidate>
         <h1 style={{textAlign: 'center'}}> WELCOME</h1>
         <h3 style={{textAlign: 'left'}}>
           Login to your account
@@ -46,10 +46,13 @@ const FormSignup = ({ submitForm }) => {
           {errors.password && <p>{errors.password}</p>}
         </div>
         
-        <button className='form-input-btn' type='submit'>
+
+        <button className='form-input-btn' type='submit' onClick={(e) => {
+          e.preventDefault();
+          window.location.href='/home';
+        }} >
           Login
         </button>
-        
 
       </form>
     </div>
