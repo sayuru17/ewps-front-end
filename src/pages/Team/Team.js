@@ -1,6 +1,7 @@
 import React from 'react';
 import './Team.css';
 import Navbar from "../../Side bar/Navbar";
+// This is our team page
 
 
 function Team(){
